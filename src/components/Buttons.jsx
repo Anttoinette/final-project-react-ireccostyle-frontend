@@ -29,7 +29,7 @@ export default function FaceshapeButtons() {
 // console.log(object.age)
   return (
     <>
-      <div className="getRecco">
+      <div>
       <Recommendation recommendation={recommendation} />
 
         <Button onClick={() => getRecco('oval')}>OVAL</Button> 
