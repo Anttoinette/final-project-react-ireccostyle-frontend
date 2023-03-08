@@ -20,9 +20,9 @@ function App() {
       <Routes>
         <Route path='/About' element={<About />}    />
         <Route path='/' element={<Home />}    />
-        <Route path='/oval' element={<faceshape faceshape="oval" />}    />
+        {/* <Route path='/oval' element={<faceshape faceshape="oval" />}    /> */}
         <Route path='/faceshape/:faceshapeId' element={<getByFaceshape />}    />
-        <Route path='/' element={<getByFaceshape />}    />
+        {/* <Route path='/faceshape' element={<getByFaceshape />}    /> */}
       </Routes>
       </main>
     </BrowserRouter>

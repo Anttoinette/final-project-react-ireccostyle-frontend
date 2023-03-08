@@ -1,40 +1,46 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
+import Container from "react-bootstrap";
+import Row from "react-bootstrap";
+import NavBar from "./NavBar";
+import Recommendation from "../scenes/Recommendation.jsx";
 
 export default function FaceshapeButtons() {
-  const [faceshape, setFaceshape] = useState()
-  const [data, setData] = useState()
-  const getRecco = (shape) => {
-      fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${shape}`)
+  
+  const [data, setData] = useState("")
+  const [shape, setShape] = useState("")
+  const getRecco = (faceshape) => {
+      // fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${shape}`)
+      fetch(`http://127.0.0.1:5002/faceshape/${faceshape}`)
       .then(res => res.json())
-      .then(setData)
+      .then((_data) => {
+       console.log(_data)
+
+       console.log('des', _data.description)
+      })
       .catch(console.error)
-      // Do something with the data
-    console.log(shape)
   };
+// const object = {
+//   name:"max",
+//   age:23
+// }
+
+// console.log(object.age)
   return (
     <>
       <div>
-        <Button onClick={() => getRecco("oval")}>OVAL</Button>
+        <Button onClick={() => getRecco('oval')}>OVAL</Button>
 
-        <Button onClick={() => getRecco("square")}>SQUARE</Button>
+        <Button onClick={() => getRecco('square')}>SQUARE</Button>
 
-        <Button onClick={() => getRecco("round")}>ROUND</Button>
+        <Button onClick={() => getRecco('heart')}>HEART</Button>
 
-        <Button onClick={() => getRecco("diamond")}>DIAMOND</Button>
+        <Button onClick={() => getRecco('diamond')}>DIAMOND</Button>
 
-        <Button onClick={() => getRecco("circle")}>CIRCLE</Button>
+        <Button onClick={() => getRecco('circle')}>CIRCLE</Button>
       </div>
+      <Recommendation data={data} />
     </>
   );
 }
 
-// return (
-  
-//   <div key={faceshape.Id}>
-//     <h2>{faceshape.title}</h2>
-//     <p>{faceshape.description}</p>
-//     <img src={img} alt={title} />
-//     <h3>{faceshape.Recommendation}</h3>
-//   </div>
-// );

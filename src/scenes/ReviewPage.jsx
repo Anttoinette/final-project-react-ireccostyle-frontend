@@ -7,7 +7,7 @@
 
 //     const reviews = collection(db, "reviews");
 
-//     const handleSubmit = aysnc (element) => {
+//     const handleSubmit = aysnc (element)=> {
 //         element.preventDefault();
 //         await addDoc(reviews, {name, reviews});
 //         setName();
@@ -15,6 +15,8 @@
 //     };
 
 //     return (
-//         <form
+//         <>
+//         </>
 //     )
 // }
+
