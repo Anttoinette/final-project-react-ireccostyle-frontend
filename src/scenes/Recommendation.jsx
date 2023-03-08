@@ -18,7 +18,7 @@ console.log(recommendation)
                 <div key={recommendation.Id}>
                   <h2>{recommendation.title}</h2>
                   <p>{recommendation.description}</p>
-                  <img src={recommendation.img} alt={recommendation.title} />
+                  <img src={recommendation.picture} alt={recommendation.title} />
                   <h3>{recommendation.recommendation}</h3>
                 </div> 
                 </div>

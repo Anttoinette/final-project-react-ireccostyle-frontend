@@ -2,6 +2,7 @@
 import Hero from "../components/Hero"
 import Instructions from "../components/Instructions"
 import Buttons from "../components/Buttons"
+import LearnMore from "./LearnMore.jsx"
 // functional component
 export default function Home() {
         return (
@@ -9,7 +10,7 @@ export default function Home() {
                 <Hero />
                 <Instructions />
                 <Buttons /> 
-                
+                <LearnMore />
 
 
 

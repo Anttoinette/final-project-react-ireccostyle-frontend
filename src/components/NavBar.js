@@ -16,6 +16,11 @@ export default function NavBar() {
             About
         </NavLink>
     </Nav.Item>
+    <Nav.Item>
+        <Nav.Link href="/Learn More">
+        Learn More
+        </Nav.Link>
+    </Nav.Item>
     </Nav>
 
     )

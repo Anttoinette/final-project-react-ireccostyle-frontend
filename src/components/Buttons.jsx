@@ -4,13 +4,15 @@ import Container from "react-bootstrap";
 import Row from "react-bootstrap";
 import NavBar from "./NavBar";
 import Recommendation from "../scenes/Recommendation.jsx";
+import { Navigate } from "react-router-dom";
 
 export default function FaceshapeButtons() {
   
-  const [data, setData] = useState("") //using a state hook intial st value 0 re-renders wn st changed
-  const [shape, setShape] = useState("")
+  // const [data, setData] = useState("") //using a state hook intial st value 0 re-renders wn st changed
+  // const [shape, setShape] = useState("")
   const [recommendation, setRecommendation] = useState("")
   const getRecco = (faceshape) => {
+    // Navigate(`/faceshape/${faceshape}`)
       // fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${shape}`)
       fetch(`http://127.0.0.1:5002/faceshape/${faceshape}`)
       .then(res => res.json()) //returns a promis w/ json data 

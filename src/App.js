@@ -7,9 +7,9 @@ import About from './scenes/About'
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import NavBar from './components/NavBar';
-{/* <Route path='/add-new' element={<AddNew />} />
-              <Route path='/recipe/:id' element={<OneRecipe />} />
-              <Route path='/editrecipe/:id' element={<EditRecipe />} /> */}
+import LearnMore from './scenes/LearnMore';
+import FaceshapePage from './scenes/FaceshapePage';
+
 function App() {
   return (
     <>
@@ -18,11 +18,11 @@ function App() {
       <Header />
       <NavBar />
       <Routes>
+        <Route path='/LearnMore' element={<LearnMore />}    />
         <Route path='/About' element={<About />}    />
         <Route path='/' element={<Home />}    />
-        {/* <Route path='/oval' element={<faceshape faceshape="oval" />}    /> */}
         <Route path='/faceshape/:faceshapeId' element={<getByFaceshape />}    />
-        {/* <Route path='/faceshape' element={<getByFaceshape />}    /> */}
+        <Route path='/faceshape/:faceshapeId' element={<FaceshapePage />}    />
       </Routes>
       </main>
     </BrowserRouter>
