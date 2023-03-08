@@ -3,28 +3,26 @@ import Card from "react-bootstrap/Card"
 import { Button } from "react-bootstrap"
 
 
-export default function Recommendation ({data}) {
+export default function Recommendation ({recommendation}) {
         // const { title, description, img, Recommendation, Id } = props
-
+console.log(recommendation)
         return (
         <main>
         <div>
-          {!data ? (
+          {!recommendation ? (
             <p>Select a shape to see recommendations</p>
-          ) : !data ? ( //if no data show loading
+          ) : !recommendation ? ( //if no data show loading
             <p>Loading...</p>
           ) : (
-            <div>
-              {data.map((element) => ( //maps through the data
-                <div key={element.Id}>
-                  <h2>{element.title}</h2>
-                  <p>{element.description}</p>
-                  <img src={element.img} alt={element.title} />
-                  <h3>{element.Recommendation}</h3>
-                </div> //add button for reviews pop-up module
-              ))}
-            </div>
-          )}
+            <div className="info">
+                <div key={recommendation.Id}>
+                  <h2>{recommendation.title}</h2>
+                  <p>{recommendation.description}</p>
+                  <img src={recommendation.img} alt={recommendation.title} />
+                  <h3>{recommendation.recommendation}</h3>
+                </div> 
+                </div>
+              )}
         </div>
       </main>
     );

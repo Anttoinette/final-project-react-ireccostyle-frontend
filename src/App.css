@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    background-color: aqua;
+    background-color: rgb(183, 191, 16);
 }
 
 #app {
     height: 100vh;
+}
+
+.info {
+    color: blue;
 }
