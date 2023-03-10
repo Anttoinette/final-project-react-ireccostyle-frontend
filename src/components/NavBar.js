@@ -17,8 +17,8 @@ export default function NavBar() {
         </NavLink>
     </Nav.Item>
     <Nav.Item>
-        <Nav.Link href="/Learn More">
-        Learn More
+        <Nav.Link href="/reviews">
+        Reviews
         </Nav.Link>
     </Nav.Item>
     </Nav>

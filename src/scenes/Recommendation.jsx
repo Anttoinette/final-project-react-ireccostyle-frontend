@@ -1,7 +1,3 @@
-import Col from "react-bootstrap"
-import Card from "react-bootstrap/Card"
-import { Button } from "react-bootstrap"
-
 
 export default function Recommendation ({recommendation}) {
         // const { title, description, img, Recommendation, Id } = props

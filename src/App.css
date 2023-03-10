@@ -13,3 +13,18 @@ body {
 .NavBar{
     color: purple;
 }
+
+.header-page ,
+.home-title { 
+    width: 80%; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 2rem;
+}
+
+footer h1 { 
+    font-size: 1.0rem;
+    margin-top: 60px; }

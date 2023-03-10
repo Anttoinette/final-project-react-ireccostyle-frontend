@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 
-
-
-
 export default function FaceshapePage() {
     const { faceshapeId } = useParams() //useParams()??
     const [ recommendation, setRecommendation ] = useState("");
@@ -20,10 +17,10 @@ export default function FaceshapePage() {
 return (
   <div>
     {recommendation ? (
-      <div>
+      <div className="recommendation">
         <h2>{recommendation.title}</h2>
         <p>{recommendation.description}</p>
-        <img src={recommendation.img} alt={recommendation.title} />
+        <img src={recommendation.picture} alt={recommendation.title} />
         <h3>{recommendation.recommendation}</h3>
       </div>
     ) : (

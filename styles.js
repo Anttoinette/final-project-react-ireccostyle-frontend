@@ -1,0 +1,47 @@
+import React from "react"
+
+import React from 'react';
+import './styles.css';
+
+const styles = {
+  container: {
+    backgroundColor: '#fff',
+    padding: 20,
+    borderRadius: 5,
+    boxShadow: '0 1px 2px #00000080',
+    marginTop: 10
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 10
+  }
+};
+
+function App() {
+  return (
+    <div className="App">
+      <div className="container" style={styles.container}>
+        <h1 className="title" style={styles.title}>Hello World</h1>
+        <p className="description" style={styles.description}>
+          This is a paragraph of text.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+// export const styles = {
+//     container: {
+//         marginTop: 0,
+//         paddingTop: 10,
+//         minHeight: "100%"
+//     },
+
+// }
