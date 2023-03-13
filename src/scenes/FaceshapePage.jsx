@@ -6,7 +6,7 @@ export default function FaceshapePage() {
     const [ recommendation, setRecommendation ] = useState("");
 
     useEffect( () => {
-        fetch(`http://127.0.0.1:5002/faceshape/${faceshapeId}`)
+        fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${faceshapeId}`)
       .then((res) => res.json()) //returns a promis w/ json data 
       .then((recommendation) => {
        setRecommendation(recommendation); //update the state with recieved data //_data

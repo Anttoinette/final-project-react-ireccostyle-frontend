@@ -6,19 +6,11 @@ export default function Reviews() {
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState("");
 
-  // useEffect(() => {
-  //   fetch(`http://127.0.0.1:5002/reviews`)
-  //     .then((res) => res.json())
-  //     .then(setReviews) //gets the newest review
-  //     .catch(alert);
-  // }, [newReview]);
-
-  // console.log(newReview)
-
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch(`http://127.0.0.1:5002/reviews`, {
-      method: "POST",
+    fetch(`https://final-project-ireccostyle-api.web.app/reviews`, {
+    // fetch(`http://127.0.0.1:5002/reviews`, {
+    method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
@@ -52,7 +44,7 @@ export default function Reviews() {
       <div>
         <h2>Your newest review</h2>
                {reviews?.map((element) => {
-  return (<p key={element.id}> {element.newReview} </p>)
+  return (<p key={element.reviewId}> {element.newReview} </p>)
  })}
       </div>
     </>

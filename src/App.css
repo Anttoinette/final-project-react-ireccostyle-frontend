@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: rgb(242, 243, 229);
+    /* background-image: url('https://hips.hearstapps.com/hmg-prod/images/hair-care-beauty-and-black-woman-hand-with-curly-royalty-free-image-1678207698.jpg?crop=1.00xw:0.737xh;0,0.244xh&resize=1200:*.jpg'); */
+
 }
 
 #app {
@@ -11,6 +13,7 @@ body {
     color: black;
 }
 .NavBar{
+    font-size: 1.5rem;
     color: purple;
 }
 
@@ -19,6 +22,26 @@ body {
     width: 80%; 
     margin: 0 auto;
     text-align: center;
+    background-color: burlywood;
+    background-size: cover;
+    background-position: center;
+}
+    /* background-repeat: no-repeat;
+ 
+
+/* .header-page,
+.home-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } */
+  
+#hero {
+color: brown;
+
 }
 
 .nav-item {
@@ -28,3 +51,99 @@ body {
 footer h1 { 
     font-size: 1.0rem;
     margin-top: 60px; }
+
+.instructions {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+
+      .about {
+        background-color: #f7f7f7;
+        padding: 50px;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      
+      .about h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      .about p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      
+      .review-page {
+        background-color: #F2E4CB;
+        padding: 50px;
+        margin: 50px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .review-page h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #6D4C41;
+      }
+      
+      .form {
+        background-color: #FFFFFF;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .form label {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #6D4C41;
+      }
+      
+      .form input[type="text"] {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #F7E0B6;
+        color: #6D4C41;
+      }
+      
+      .form button {
+        background-color: #6D4C41;
+        color: #FFFFFF;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .new-review {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .new-review h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #6D4C41;
+      }
+      
+      /* .new-review p {
+        font-size: 
+      }      
+       */

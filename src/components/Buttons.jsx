@@ -13,8 +13,8 @@ export default function FaceshapeButtons() {
   const [recommendation, setRecommendation] = useState("")
   const getRecco = (faceshape) => {
     // Navigate(`/faceshape/${faceshape}`)
-      // fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${shape}`)
-      fetch(`http://127.0.0.1:5002/faceshape/${faceshape}`)
+      fetch(`https://final-project-ireccostyle-api.web.app/faceshape/${faceshape}`)
+      // fetch(`http://127.0.0.1:5002/faceshape/${faceshape}`)
       .then(res => res.json()) //returns a promis w/ json data 
       .then((recommendation) => {
        setRecommendation(recommendation); //update the state with recieved data //_data
@@ -42,7 +42,7 @@ export default function FaceshapeButtons() {
 
         <Button onClick={() => getRecco('diamond')}>DIAMOND</Button>
 
-        <Button onClick={() => getRecco('circle')}>CIRCLE</Button>
+        <Button onClick={() => getRecco('circle')}>ROUND</Button>
       </div>
     </>
   );
