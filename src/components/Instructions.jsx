@@ -1,7 +1,7 @@
 
 export default function Instruction() {
     return (
-        <h3>Instructions on how to choose your faceshape: Compare the length and
+        <h3 className="instructions">Instructions on how to choose your faceshape: Compare the length and
             width of your face. If you're still unsure about your facial shape,
             measure the length of your face against its width. Measure from the
             center of your hairline to the tip of your chin. Next, measure from

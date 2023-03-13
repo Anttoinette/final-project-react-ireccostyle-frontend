@@ -18,7 +18,7 @@ export default function NavBar() {
     </Nav.Item>
     <Nav.Item>
         <Nav.Link href="/reviews">
-        Reviews
+        Leave A Review
         </Nav.Link>
     </Nav.Item>
     </Nav>

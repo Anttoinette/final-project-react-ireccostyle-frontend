@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(183, 191, 16);
+    background-color: rgb(242, 243, 229);
 }
 
 #app {
@@ -8,7 +8,7 @@ body {
 }
 
 .info {
-    color: blue;
+    color: black;
 }
 .NavBar{
     color: purple;

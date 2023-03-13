@@ -1,7 +1,7 @@
 // import { useState } from "react";
 // import { collection, addDoc } from "firebase"
 
-// export default function ReviewPage(reviews) {
+// export default function ReviewPage({reviews}) {
 //     // console.log("Review is", reviews)
 //     const { reviewId } = useParams();
 //     const [name, setName] = useState();

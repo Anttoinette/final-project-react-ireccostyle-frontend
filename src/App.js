@@ -7,14 +7,12 @@ import About from "./scenes/About";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { useState, useEffect } from "react";
-import { SafeAreaView, Text } from "react-router-dom";
+// import { useState } from "react";
 import FaceshapePage from "./scenes/FaceshapePage";
-import ReviewPage from "./components/ReviewPage.jsx";
 import Reviews from "./scenes/Reviews";
+
 function App() {
-  const [reviews, setReviews] = useState("");
-  // const [reviewsCount, setReviews] = useState("")
+  // const [reviews, setReviews] = useState("");
   return (
     <>
       <BrowserRouter>
