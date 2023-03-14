@@ -25,7 +25,7 @@ export default function Reviews() {
   console.log(reviews);
 
   return (
-    <>
+    <div className="review-page-container">
       <h1>Review Page</h1>
       <Form className="form">
         <Form.Group>
@@ -47,7 +47,7 @@ export default function Reviews() {
   return (<p key={element.reviewId}> {element.newReview} </p>)
  })}
       </div>
-    </>
+    </div>
   );
 }
 

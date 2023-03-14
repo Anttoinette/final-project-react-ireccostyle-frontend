@@ -1,8 +1,19 @@
 body {
     margin: 0;
     background-color: rgb(242, 243, 229);
-    /* background-image: url('https://hips.hearstapps.com/hmg-prod/images/hair-care-beauty-and-black-woman-hand-with-curly-royalty-free-image-1678207698.jpg?crop=1.00xw:0.737xh;0,0.244xh&resize=1200:*.jpg'); */
+    /* background-image: url('/images/wallpaper.webp'); */
 
+}
+.btn-primary {
+  background-color: rgb(58, 56, 53);
+  border: none;
+}
+.buttons-faceshape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #app {
@@ -19,7 +30,7 @@ body {
 
 .header-page ,
 .home-title { 
-    width: 80%; 
+    width: 100%; 
     margin: 0 auto;
     text-align: center;
     background-color: burlywood;
@@ -54,17 +65,18 @@ footer h1 {
 
 .instructions {
         font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 25px;
         line-height: 1.5;
         margin: 20px;
         padding: 20px;
-        background-color: #f1f1f1;
-        border: 2px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.544);
+        border: 10px solid #131b04;
         border-radius: 10px;
+      
       }
 
       .about {
-        background-color: #f7f7f7;
+        background-color: burlywood;
         padding: 50px;
         margin-top: 50px;
         border-radius: 10px;
@@ -73,8 +85,9 @@ footer h1 {
       }
       
       .about h1 {
-        font-size: 36px;
+        font-size: 40px;
         margin-bottom: 20px;
+
       }
       
       .about p {
@@ -94,21 +107,24 @@ footer h1 {
       .review-page h1 {
         font-size: 48px;
         margin-bottom: 20px;
-        color: #6D4C41;
+        color: #FFFFFF;
       }
       
       .form {
-        background-color: #FFFFFF;
+        background-color: rgba(230, 152, 35, 0.406);
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: auto;
+        margin-left: 25%;
+        margin-right: 25%;
       }
       
       .form label {
         font-size: 24px;
         margin-bottom: 10px;
-        color: #6D4C41;
+        color: #181311;
       }
       
       .form input[type="text"] {
@@ -143,6 +159,18 @@ footer h1 {
         color: #6D4C41;
       }
       
+      .review-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+      }
+
+      .nav-color:link,
+      .nav-color:visited {
+        color: black;
+      }
       /* .new-review p {
         font-size: 
       }      

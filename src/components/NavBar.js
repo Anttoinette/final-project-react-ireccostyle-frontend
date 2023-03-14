@@ -6,18 +6,18 @@ export default function NavBar() {
     return (
         <Nav className="justify-content-center flex-row nav-color">
     <Nav.Item>
-        <NavLink href="/">
+        <NavLink className="nav-color" href="/">
             Home
         </NavLink>
     </Nav.Item>
     
     <Nav.Item>
-        <NavLink href="/About">
+        <NavLink className="nav-color" href="/About">
             About
         </NavLink>
     </Nav.Item>
     <Nav.Item>
-        <Nav.Link href="/reviews">
+        <Nav.Link className="nav-color" href="/reviews">
         Leave A Review
         </Nav.Link>
     </Nav.Item>
